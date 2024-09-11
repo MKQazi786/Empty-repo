@@ -197,6 +197,7 @@ class SignUp extends StatelessWidget {
                       height: 10,
                     ),
                     TextField(
+                      obscureText: true,
                       decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.lock, size: 20),
                           labelText: "Password",
@@ -206,7 +207,7 @@ class SignUp extends StatelessWidget {
                     ),
                     RichText(
                         text: TextSpan(children: [
-                      TextSpan(text: "Already a member?"),
+                      const TextSpan(text: "Already a member?"),
                       TextSpan(
                           text: "Log In",
                           style: const TextStyle(
